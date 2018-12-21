@@ -1,0 +1,106 @@
+html {
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+nav{
+    padding: 25px 0px;
+    float: left;
+    position: relative;
+}
+
+a{
+    transition: 0.4s linear;
+}
+
+@media screen and (max-width: 600px) {
+    .a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.menu{
+        font-family: Arial, sans-serif;
+        font-size: 14pt; 
+        text-decoration: none;
+        padding: 20px;
+    }
+
+ul li{
+    display: inline-block;    
+}
+
+a:hover {
+    background-color: #86a1a3; 
+   }
+
+ul li:hover > ul { 
+    display: block;
+
+   }
+
+ul ul{
+    margin-top:18px;
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+ul ul li{
+    
+    margin: 5px;
+    position: relative;
+    display: block;
+    
+    text-align: center;
+    
+}
+
+ul ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.paragraph{
+    padding: 10px;
+}
+
+.logo{
+    padding-top: 0px;
+    float: right;
+}
+
+#anim_text{
+    padding: 10px;
+    object-position: right top;
+    position: absolute;
+    font-size: 22pt;
+    animation-name: logo_animation;
+	animation-duration: 2s;
+}
+
+@keyframes logo_animation {
+    0%   {left: 1500px; right: -500px;}
+    100% {left: 1000px; right: 100px;}
+}
+
+#banner{
+    padding-top: 100px;
+}
+
+.paragr{
+    padding: 0px 50px;
+}
